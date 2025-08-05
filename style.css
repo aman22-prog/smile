@@ -114,3 +114,20 @@ button:hover {
     padding: 10px 20px;
   }
 }
+.image-container {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.centered-image {
+  width: 80%;
+  max-width: 400px;
+  border-radius: 20px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.centered-image:hover {
+  transform: scale(1.03);
+}
+
