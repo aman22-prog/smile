@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Birthday Smile 🎉</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Merriweather&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="welcome" class="center-screen fade-in">
+    <h1>🌸 Happy Birthday, Smile 🌸</h1>
+    <p class="tagline">A little something from my heart to yours</p>
+    <button onclick="enterSite()">Enter</button>
+  </div>
+
+  <div id="main" style="display: none;" class="fade-in">
+    <div class="container">
+      <h2 class="heading">💖 For the Sweetest Smile</h2>
+      <p class="message">
+        You’re the kind of person who makes life brighter just by being in it.  
+        On your special day, I hope you feel all the love you truly deserve.
+      </p>
+
+      <div class="letter">
+        <h3 class="letter-title">💌 A Letter For You</h3>
+        <p>
+          Dear Smile,<br><br>
+          We weren’t planned. We just happened.  
+          A simple “hi” turned into something special.  
+          You became my comfort, my person, my light.<br><br>
+
+          I’ve laughed harder with you than with anyone.  
+          Even when things were tough, I never stopped caring.  
+          You matter more than words can say.<br><br>
+
+          Thank you for being YOU.  
+          Happy Birthday once again.  
+          I’m so lucky to know you.<br><br>
+
+          Always yours,<br>
+          Aman 🌸
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <audio id="bgMusic" src="music.mp3" preload="auto"></audio>
+
+  <script>
+    function enterSite() {
+      document.getElementById("welcome").style.display = "none";
+      document.getElementById("main").style.display = "block";
+      const music = document.getElementById("bgMusic");
+      music.volume = 0.6;
+      music.play();
+    }
+  </script>
+</body>
+</html>
